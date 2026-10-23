@@ -1,0 +1,12 @@
+# Boundaries
+Main-thread forward simulation, integer game minutes. Initial time is absolute; no historical calendar, leap years, time zone, DST or offline real-time progression.
+Basic lighting only: stylized fixed daily sun arc, canvas tint and ambient changes. No weather, advanced sky, GI configuration, latitude/astronomy or moon system. Existing lighting/canvas/environment conflicts need deliberate integration.
+No NPC pathfinding, shops, quest system, battles or visual graph editor. Conditions expose availability and weights; they do not move an NPC or perform commerce.
+Schedule diagnostics are sampled previews, not formal proofs across unsampled minutes. They reject requests above 4,096 rows or 65,536 rule samples. A diagnostic conflict requires matching nonempty owner IDs or exclusive groups; unrelated simultaneous conditions are reported only as sampled overlaps.
+Fixed-minute recurrence, not month-relative scheduling. Final-state period/season signals are not every crossed boundary; scheduled events deliver all occurrences within bounded skips.
+Clock-host restore captures a validated recovery snapshot and rolls attempted participants back in reverse order if a commit rejects, including the rejecting participant. Validation, snapshot, commit and notification callbacks run under the registry/restore guard. Failed restores emit no success notifications. Custom participants must keep serialize/validate_restore side-effect-free and accept their own saved snapshot in commit_restore(data, false); commits must not change other participants or emit notifications. If a participant is destroyed or rejects recovery, last_error names the unrecovered member. This callback contract cannot guarantee universal atomic rollback of arbitrary game code or external side effects.
+Temporary-file rename is not a guarantee against every power-loss/filesystem failure. Existing .fw-writing files are protected; inspect/recover them before retrying.
+Loading is bounded to 64 KiB JSON, no untrusted Resource loading. Editor .tres profiles are code-bearing Godot Resources: load only trusted project files.
+Callbacks must not mutate clock configuration or recurse into advancement. Dynamic calendar/event changes require save migration.
+Dock drafts require Apply; history covers 50 profile edits and is not persisted across editor shutdown. Save first.
+Headless automation cannot prove visual quality or human usability. Only Godot 4.7.2 Windows x64 tested. No standalone executable or engine included.
