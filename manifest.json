@@ -1,0 +1,203 @@
+{
+  "product": "RPG Time & Seasons",
+  "brand": "Fableweld Labs",
+  "version": "1.3.3",
+  "packager_sha256": "486A085BE527C1B8C6E59FC1660F47C18CE8594ACDF9B090FCE265EA382D8FCA",
+  "edition": "Lite",
+  "engine_test_target": "4.7.2.stable.official.ed1daf0bf",
+  "license_status": "MIT; owner approved 2026-10-23",
+  "release_status": "Prepared for owner publication review",
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "sha256": "57C7BE203E9BA22692232F3F07A93A0A3FA0D3D78C76F395D1FA12D6F3EC4FCB",
+      "bytes": 1067
+    },
+    {
+      "path": "README.md",
+      "sha256": "1A2519DB549755E5232FAF57490B285C9990B3BD6E08C3AD6BD348DEBA14658D",
+      "bytes": 929
+    },
+    {
+      "path": "addons/rpg_time/README.md",
+      "sha256": "3E75DEF8EAFE8A1E3CABAB9A7AC0771EE7C8BBED43F243898C6824B0E11E21FD",
+      "bytes": 540
+    },
+    {
+      "path": "addons/rpg_time/core/action_icons.gd",
+      "sha256": "4C396429515887E6D050FA41198D67033B65CCE6385C25BDF120990720EECCE0",
+      "bytes": 4318
+    },
+    {
+      "path": "addons/rpg_time/core/action_icons.gd.uid",
+      "sha256": "DEB1C0303EBED2285EB0146A5E732387025ADAD5AFC0217CFE9B516C4908E94E",
+      "bytes": 20
+    },
+    {
+      "path": "addons/rpg_time/core/brand.gd",
+      "sha256": "C63FF2D8E627B2848F912230926E65D444BFFFB3A459FFED2F72C291079B577B",
+      "bytes": 2558
+    },
+    {
+      "path": "addons/rpg_time/core/brand.gd.uid",
+      "sha256": "6BDDE3C95EF1D69EC38CEF11D05927A60D53DB432968BD31E26561C04DE93135",
+      "bytes": 20
+    },
+    {
+      "path": "addons/rpg_time/core/clock.gd",
+      "sha256": "AA32698C64114EBEC201B57EAEA80584504B9365A1F2912819D0C9E789CA4A6E",
+      "bytes": 4157
+    },
+    {
+      "path": "addons/rpg_time/core/clock.gd.uid",
+      "sha256": "03301BB4EF9290CEA6FF93EBE627718E66583F6548D54240877157E022DDEDC0",
+      "bytes": 20
+    },
+    {
+      "path": "addons/rpg_time/core/periods.gd",
+      "sha256": "EE3579FEB340CDF6547A1493EADEBA5BA365B757EA9A0EFCA00B31A45C61BE31",
+      "bytes": 1103
+    },
+    {
+      "path": "addons/rpg_time/core/periods.gd.uid",
+      "sha256": "BB65C096983495C62D9363A8F61949C23C8D2F76C599E7F1180379A278B32705",
+      "bytes": 20
+    },
+    {
+      "path": "addons/rpg_time/core/profile.gd",
+      "sha256": "8E05DFC933DFCDBABD26FCE450AB7DF268C2BBC621F69EB25A9EA8211B2C5579",
+      "bytes": 3877
+    },
+    {
+      "path": "addons/rpg_time/core/profile.gd.uid",
+      "sha256": "417CE94DD5F7B1BA5F4612D9160FBB0A71EC499094E96801313E4C894EB022E2",
+      "bytes": 20
+    },
+    {
+      "path": "addons/rpg_time/editor/authoring.gd",
+      "sha256": "CB4E351A09FA86FD5C0FCB9EACEAF24F2380916D2FE8A692F855CB0350855EB4",
+      "bytes": 7606
+    },
+    {
+      "path": "addons/rpg_time/editor/authoring.gd.uid",
+      "sha256": "56241E1F7F62FCD92EFD452B655306D8AC9D1ECF5F19C3CD27E1D7E20754B983",
+      "bytes": 19
+    },
+    {
+      "path": "addons/rpg_time/editor/dock.gd",
+      "sha256": "C6F0A5C6B52CB3E2C927E8F005A3892A803F032D3CDF9F83D191DC9B14A1D375",
+      "bytes": 35293
+    },
+    {
+      "path": "addons/rpg_time/editor/dock.gd.uid",
+      "sha256": "69D3454BC41F7E15639F82FBA0F4BF9578A0AE57F4A91FEF28E67899E058B841",
+      "bytes": 20
+    },
+    {
+      "path": "addons/rpg_time/editor/plugin.gd",
+      "sha256": "839B13FFEF3A282FF8F1F16904264EB2456E3AD715AC23CD034A67A1D3577385",
+      "bytes": 1768
+    },
+    {
+      "path": "addons/rpg_time/editor/plugin.gd.uid",
+      "sha256": "AB17D7148EBCBFF16C41C0BEB4130A4F313FD70C50F15CF28503528F30F20561",
+      "bytes": 19
+    },
+    {
+      "path": "addons/rpg_time/editor/scene_wiring.gd",
+      "sha256": "62CC2B6C63D5099D82C50168C04E8B136E580D6EB4DDB0723ABDA6469C2ECEB2",
+      "bytes": 2917
+    },
+    {
+      "path": "addons/rpg_time/editor/scene_wiring.gd.uid",
+      "sha256": "223AE63084F4C4B69F788C9745B0814278D778ABA4163EAF61ACBED3C3BB3695",
+      "bytes": 20
+    },
+    {
+      "path": "addons/rpg_time/editor/starter_builder.gd",
+      "sha256": "42BDF2CE60DCDDE311C3A7DD022D3732BBD35A24AA44CA2F58DB29CB8E8D8C71",
+      "bytes": 2311
+    },
+    {
+      "path": "addons/rpg_time/editor/starter_builder.gd.uid",
+      "sha256": "858A7D91735AC2C4E7E3288E85AE9CFAD72B14D85582093992E6BFA11E96F9D7",
+      "bytes": 20
+    },
+    {
+      "path": "addons/rpg_time/plugin.cfg",
+      "sha256": "41A8077F53C7F550215001C38E367156D34E52DA50622279782A78C795A1B147",
+      "bytes": 178
+    },
+    {
+      "path": "docs/API.md",
+      "sha256": "0F14637179A2342BB81D1EB7A315EEABD76BF27584B03666FE8D1740D095AAFC",
+      "bytes": 2695
+    },
+    {
+      "path": "docs/FEATURE-MATRIX.md",
+      "sha256": "1BD92752D54F1C330E13F0EA6539A5763E1A4500A22C93E6FDDAF3DD0BECDA60",
+      "bytes": 1908
+    },
+    {
+      "path": "docs/GETTING-STARTED.md",
+      "sha256": "EE187BD6678EF798F6138A6C1B083DA60CCB2AFBD933E4B10119699A9F6514A1",
+      "bytes": 3244
+    },
+    {
+      "path": "docs/INSTALL-UPGRADE.md",
+      "sha256": "AE09831B641CD6DBA253D114E8316BBDCD0D8088449343A4636DB699DADADA60",
+      "bytes": 2686
+    },
+    {
+      "path": "docs/LIMITATIONS.md",
+      "sha256": "AAB7C9F6B7BB846ACF8A5115B46BF05730ACC06E90EC2821647ED9EBDB403195",
+      "bytes": 2510
+    },
+    {
+      "path": "docs/RELEASE-GATES.md",
+      "sha256": "17ABD98DF7AB6F8957ACAADF8AB375394F564D65DDA546CBF61E966DAD3FFDA0",
+      "bytes": 2345
+    },
+    {
+      "path": "examples/lite.gd",
+      "sha256": "04C856441932BB19DAE03FE1912BCA31C3E38C58FC1826AF47C8D32C8BDCCE4E",
+      "bytes": 1476
+    },
+    {
+      "path": "examples/lite.tscn",
+      "sha256": "5591FA1DFB4E9D4247A7AD52CEC54B71C5F774C918B58DF2BB2CCF741D16E2CB",
+      "bytes": 168
+    },
+    {
+      "path": "project.godot",
+      "sha256": "8E6D59E6920D3F8592DA31BE80E4306B957D52726ED7BB8D852AC1D82A8ACA01",
+      "bytes": 272
+    },
+    {
+      "path": "tests/editor_probe.gd",
+      "sha256": "CB855028F717776E1C2FD860EA02D9740EFA0F5FD68FBB99117776E351472027",
+      "bytes": 4835
+    },
+    {
+      "path": "tests/lite.gd",
+      "sha256": "F68F01876365D5FDC22514429AA01682A69426F0BE4271F0F2BE78640A553A74",
+      "bytes": 1646
+    },
+    {
+      "path": "tools/headless.ps1",
+      "sha256": "1188826A57043F92EE6D80780571D820D9C01B85D4AEFF770FC12BA29DA4CCED",
+      "bytes": 2297
+    },
+    {
+      "path": "tools/verify.ps1",
+      "sha256": "75F6CCB569565FD79B451B542B59AE0613FF43FE3215B0A6E81FF27E426460A2",
+      "bytes": 1288
+    }
+  ],
+  "manifest_repair": "2026-10-23: record existing generated README.md and project.godot; all other entries unchanged; original packager identity retained.",
+  "base_archive_sha256": "846E5A6EFF972671022F39790F7866A94C5C046800B495C881FF2A1DAB2A92C0",
+  "delta_packager_sha256": "0C2614F91B32B76AECD21E961B58E41935A260EB2C87A8F78AC08B8F0DFBE128",
+  "change_scope": "Dock layout, plugin version, README and manifest only; no later Pro feature import",
+  "rights_holder": "Gordon Hinchen",
+  "rights_holder_designation": "Individual owner; public first and last name"
+}
