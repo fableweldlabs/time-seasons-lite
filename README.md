@@ -10,11 +10,19 @@ This revision corrects Lite onboarding and an absent-document reference. Runtime
 
 Tested target: Godot 4.7.2 Windows x64. MIT licensed. Copyright (c) 2026 Gordon Hinchen. Published by Gordon Hinchen. See LICENSE.txt.
 
+## See the clock in action
+
+![Clock signals open and close a tutorial shop](https://img.itch.zone/aW1hZ2UvNTIxNDc3My8zMTI2Nzk4OS5naWY=/original/oWSSSr.gif)
+
+24-second demonstration of the released Lite clock. Shop UI and behavior are separate tutorial code. [Run the morning-shop tutorial](tutorials/morning-shop/README.md).
+
 ## Links
+- Optional integration tutorial: [Open a shop with the morning signal](tutorials/morning-shop/README.md). Runnable scene and example shop code are separate additions on main; the original 1.3.3 ZIP is unchanged.
 - Main website and packaged release: https://fableweld-labs.itch.io/time-seasons-free-lite
 - Public source and releases: https://github.com/fableweldlabs/time-seasons-lite
 - Bug reports: https://github.com/fableweldlabs/time-seasons-lite/issues
 - Support hub: https://github.com/fableweldlabs/fableweldlabs
 
 Free Lite is published. Copyright (c) 2026 Gordon Hinchen. Fableweld Labs branding is retained. Only Godot 4.7.2 on Windows x64 has been verified.
+
 
