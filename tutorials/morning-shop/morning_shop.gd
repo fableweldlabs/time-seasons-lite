@@ -13,6 +13,7 @@ var ledger: Array[String] = []
 var capture_mode := false
 
 func _ready() -> void:
+	get_window().size = Vector2i(1280, 720)
 	RenderingServer.set_default_clear_color(Color("19243e"))
 	var profile := FWTimeProfile.new()
 	profile.initial_minute = 27 * 1440 + 350 # Spring, day 28, 05:50.
