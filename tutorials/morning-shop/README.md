@@ -4,6 +4,10 @@ This optional tutorial uses Time & Seasons Free Lite 1.3.3. The shop controller,
 
 Verified target: Godot 4.7.2 on Windows x64. MIT license, Copyright (c) 2026 Gordon Hinchen, under this repository's LICENSE. No Paid addon is required.
 
+![Morning opens the tutorial shop; Evening closes it](https://img.itch.zone/aW1hZ2UvNTIxNDc3My8zMTI2Nzk4OS5naWY=/original/oWSSSr.gif)
+
+24-second recording of real Godot viewport output. The timeline uses deterministic clock API calls for capture; the scene runs automatically when played normally.
+
 ## Run the example
 
 1. Download the repository's current **main** branch ZIP, extract it and import its root `project.godot`. For the original packaged addon, use [itch.io](https://fableweld-labs.itch.io/time-seasons-free-lite).
@@ -73,3 +77,4 @@ godot --headless --path . --script tutorials/morning-shop/tests.gd
 The focused checks cover startup state, Morning/Day/Evening transitions, day skips, immediate synchronization after rebinding, old-clock disconnection and unbinding. They do not establish support for other Godot versions or platforms.
 
 [Free download](https://fableweld-labs.itch.io/time-seasons-free-lite) | [Lite API](../../docs/API.md) | [Bug reports](https://github.com/fableweldlabs/time-seasons-lite/issues)
+
