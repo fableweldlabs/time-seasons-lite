@@ -1,8 +1,12 @@
 config_version=5
 [application]
-config/name="Fableweld Labs - RPG Time and Seasons Lite"
-run/main_scene="res://examples/lite.tscn"
-[editor_plugins]
-enabled=PackedStringArray("res://addons/rpg_time/plugin.cfg")
+config/name="Lumen Vale - Time & Seasons Showcase"
+run/main_scene="res://addons/rpg_time/examples/courtyard/main.tscn"
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
 [rendering]
 renderer/rendering_method="gl_compatibility"
+[editor_plugins]
+enabled=PackedStringArray("res://addons/rpg_time/plugin.cfg")

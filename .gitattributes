@@ -1,0 +1,4 @@
+* -text
+/** export-ignore
+/addons !export-ignore
+/addons/** !export-ignore
