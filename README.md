@@ -6,7 +6,7 @@ This repository contains source, documentation and development checks. Install r
 [Website and download](https://fableweld-labs.itch.io/time-seasons-free-lite) · [Bug reports](https://github.com/fableweldlabs/time-seasons-lite/issues)
 
 ## Update policy
-Stable add-on folder, script class names, UIDs and profile schema keep customer resources working between compatible updates. User files stay outside addons. Version details live in plugin.cfg and CHANGELOG.md, not product titles or thumbnails. The companion [Time & Seasons Starter](https://fableweld-labs.itch.io/time-seasons-starter) adds reusable lighting, HUD and game-scene workflows.
+Stable add-on folder, script class names, UIDs and profile schema keep customer resources working between compatible updates. User files stay outside addons. Version details live in plugin.cfg and CHANGELOG.md, not product titles or thumbnails. Additional editions remain in preparation; this release does not require a paid counterpart.
 
 MIT License. Copyright (c) 2026 Gordon Hinchen.
 

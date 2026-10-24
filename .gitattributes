@@ -5,3 +5,5 @@
 
 /addons/rpg_time/examples export-ignore
 /addons/rpg_time/examples/** export-ignore
+
+/addons/rpg_time/editor/locales/README.md export-ignore

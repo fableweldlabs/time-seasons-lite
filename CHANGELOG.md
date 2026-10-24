@@ -13,3 +13,9 @@
 - Core clock API, script UIDs and saved-profile schema unchanged from the public release.
 
 See the release manifest and platform records for exact package hashes and publication status.
+
+### Separate downloads and languages
+- Addon-only installer works without example assets. Editable Lumen Vale and the Windows demo are optional separate downloads.
+- English plus Spanish, Brazilian Portuguese, Simplified Chinese, Japanese, French and German interfaces and quick starts.
+- Lumen Vale dialogue, prompts, narration, help and sign textures translated, including natural localized place names. Language switching preserves clock state and uses one sign atlas at a time.
+- Core API, schema, paths and UIDs remain compatible.
