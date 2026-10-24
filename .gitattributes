@@ -2,3 +2,6 @@
 /** export-ignore
 /addons !export-ignore
 /addons/** !export-ignore
+
+/addons/rpg_time/examples export-ignore
+/addons/rpg_time/examples/** export-ignore
