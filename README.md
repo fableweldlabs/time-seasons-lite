@@ -1,28 +1,16 @@
-# RPG Time & Seasons Free Lite - Fableweld Labs
+# Time & Seasons Lite
+A free, MIT-licensed world clock for Godot by Fableweld Labs.
 
-Version 1.3.3. Start with docs/GETTING-STARTED.md for the included example and addon-only installation.
+This repository contains source, documentation and development checks. Install releases contain only addons/rpg_time, including the license, quick start and docs. The editable example project and playable Windows demo are separate optional downloads. See [the installation guide](addons/rpg_time/README.md).
 
-Lite includes a shared clock, four fixed seasons, editable periods, signals, guided profile setup and isolated preview. It supplies the time source; a visible in-game HUD is not included.
+[Website and download](https://fableweld-labs.itch.io/time-seasons-free-lite) · [Bug reports](https://github.com/fableweldlabs/time-seasons-lite/issues)
 
-Open project.godot at this extracted package's root in Godot 4.7.2 and press F5 for the signal example. To install in your game, copy only addons/rpg_time, then enable the plugin. Never replace your game's project.godot.
+## Update policy
+Stable add-on folder, script class names, UIDs and profile schema keep customer resources working between compatible updates. User files stay outside addons. Version details live in plugin.cfg and CHANGELOG.md, not product titles or thumbnails. Additional editions remain in preparation; this release does not require a paid counterpart.
 
-This revision corrects Lite onboarding and an absent-document reference. Runtime/editor scripts are byte-identical to 1.3.2. See docs/INSTALL-UPGRADE.md, docs/API.md and manifest.json. Do not install Lite and Paid side by side.
+MIT License. Copyright (c) 2026 Gordon Hinchen.
 
-Tested target: Godot 4.7.2 Windows x64. MIT licensed. Copyright (c) 2026 Gordon Hinchen. Published by Gordon Hinchen. See LICENSE.txt.
+## Lumen Vale
+Download the optional Editable Example Project, extract it separately and open its project.godot. Run addons/rpg_time/examples/courtyard/main.tscn to explore the original 3D showcase. WASD/arrows move; Shift jogs; E interacts; scroll zooms; H opens photo view; Escape returns or opens help. Visit Mira's market, greet Moss the cat, ring the bell, watch the koi and rest until morning. Original synthesized sounds can be muted. The demo scenery, characters, audio, lighting and shop are optional example code. The Lite product supplies time, seasons, periods and signals.
 
-## See the clock in action
-
-![Clock signals open and close a tutorial shop](https://img.itch.zone/aW1hZ2UvNTIxNDc3My8zMTI2Nzk4OS5naWY=/original/oWSSSr.gif)
-
-24-second demonstration of the released Lite clock. Shop UI and behavior are separate tutorial code. [Run the morning-shop tutorial](tutorials/morning-shop/README.md).
-
-## Links
-- Optional integration tutorial: [Open a shop with the morning signal](tutorials/morning-shop/README.md). Runnable scene and example shop code are separate additions on main; the original 1.3.3 ZIP is unchanged.
-- Main website and packaged release: https://fableweld-labs.itch.io/time-seasons-free-lite
-- Public source and releases: https://github.com/fableweldlabs/time-seasons-lite
-- Bug reports: https://github.com/fableweldlabs/time-seasons-lite/issues
-- Support hub: https://github.com/fableweldlabs/fableweldlabs
-
-Free Lite is published. Copyright (c) 2026 Gordon Hinchen. Fableweld Labs branding is retained. Only Godot 4.7.2 on Windows x64 has been verified.
-
-
+**Only the Addon Only download is needed to use Time & Seasons. Both Lumen Vale downloads are optional.**

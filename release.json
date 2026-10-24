@@ -1,0 +1,20 @@
+{
+  "product": "Time & Seasons Lite",
+  "version": "1.4.0",
+  "status": "release",
+  "license": "MIT",
+  "copyright": "Gordon Hinchen",
+  "addon": "addons/rpg_time",
+  "schema_version": 1,
+  "tested_target": "Godot 4.7.2 Windows x64",
+  "channels": [
+    "itch.io",
+    "GitHub",
+    "Godot Asset Store",
+    "Godot Asset Library"
+  ],
+  "immutable_existing_release": "v1.3.3",
+  "stable_urls": true,
+  "showcase": "Lumen Vale",
+  "counterpart": "Time & Seasons Starter at USD 2.99"
+}

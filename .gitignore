@@ -1,6 +1,13 @@
 .godot/
-.import/
-*.translation
-export.cfg
-export_presets.cfg
+.test-user/
+*.log
 upgrade-proof/
+validation.json
+OWNER.json
+BASELINE.json
+.export-user/
+.export-local/
+.video-frames/
+.install-host/
+.archive-check.git/
+packages/
