@@ -24,7 +24,7 @@ func run() -> void:
 	var dock = load("res://addons/rpg_time/editor/dock.gd").new()
 	root.add_child(dock)
 	await process_frame
-	check(dock.tabs.get_tab_count() == 7 and dock.preview != null,"Lite dock initializes without Paid scripts")
+	check(dock.tabs.get_tab_count() == 3 and dock.preview != null,"Lite dock initializes without Paid scripts")
 	check(not dock.has_unapplied,"Lite fields initialized")
 	dock.fields.period_name.text = "Midnight"
 	dock.apply_period()
