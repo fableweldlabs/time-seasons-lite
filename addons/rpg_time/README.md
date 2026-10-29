@@ -25,8 +25,12 @@ Docs, source and bug reports: https://github.com/fableweldlabs/time-seasons-lite
 
 ## Languages / Idiomas / 语言 / 言語 / Langues / Sprachen
 
-Choose Language in the addon dock: English, Español, Português (Brasil), 简体中文, 日本語, Français or Deutsch. Only this addon’s interface changes. Customer period names, API identifiers and saved resources remain unchanged. Native Godot dialogs follow the editor’s language. Unknown text falls back to English.
+Choose Language in the addon dock: English, Español, Português (Brasil), 简体中文, 日本語, Français, Deutsch, Polski, 한국어, 繁體中文, Türkçe or Українська. Only this addon’s interface changes. Customer period names, API identifiers and saved resources remain unchanged. Native Godot dialogs follow the editor’s language. Unknown text falls back to English.
 
-[Español](docs/QUICKSTART.es.md) · [Português (Brasil)](docs/QUICKSTART.pt_BR.md) · [简体中文](docs/QUICKSTART.zh_CN.md) · [日本語](docs/QUICKSTART.ja.md) · [Français](docs/QUICKSTART.fr.md) · [Deutsch](docs/QUICKSTART.de.md)
+[Español](docs/QUICKSTART.es.md) · [Português (Brasil)](docs/QUICKSTART.pt_BR.md) · [简体中文](docs/QUICKSTART.zh_CN.md) · [日本語](docs/QUICKSTART.ja.md) · [Français](docs/QUICKSTART.fr.md) · [Deutsch](docs/QUICKSTART.de.md) · [Polski](docs/QUICKSTART.pl.md) · [한국어](docs/QUICKSTART.ko.md) · [繁體中文](docs/QUICKSTART.zh_TW.md) · [Türkçe](docs/QUICKSTART.tr.md) · [Українська](docs/QUICKSTART.uk.md)
 
 Translations are AI-assisted and have not had independent native-speaker review. Please report wording issues on GitHub. The optional Lumen Vale game also supports these languages, including dialogue, prompts and signs, with localized place names. Choose a language in its top-left selector. The English MIT license is authoritative; API reference remains in English.
+
+## Version 2.2.0
+
+Adds Polish, Korean, Traditional Chinese, Turkish and Ukrainian across the interface, quick starts and optional example. Formatted status-message patterns are now compiled once per language change rather than once per message. Core clock behavior and existing profile formats are unchanged.
