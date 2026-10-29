@@ -1,10 +1,12 @@
 @tool
 extends RefCounted
 ## Editor-only dictionaries. No global TranslationServer or game settings changes.
-const CODES = ["en", "es", "pt_BR", "zh_CN", "ja", "fr", "de"]
-const NAMES = ["English", "Español", "Português (Brasil)", "简体中文", "日本語", "Français", "Deutsch"]
+const CODES = ["en", "es", "pt_BR", "zh_CN", "ja", "fr", "de", "pl", "ko", "zh_TW", "tr", "uk"]
+const NAMES = ["English", "Español", "Português (Brasil)", "简体中文", "日本語", "Français", "Deutsch", "Polski", "한국어", "繁體中文", "Türkçe", "Українська"]
 static var selected: String = ""
 static var catalog: Dictionary = {}
+## Rebuilt only on a locale change, not on every status message.
+static var message_patterns: Array[Dictionary] = []
 
 static func locale() -> String:
 	if selected.is_empty():
@@ -14,6 +16,7 @@ static func locale() -> String:
 static func set_locale(code: String, _persist: bool = true) -> void:
 	selected = code if code in CODES else "en"
 	catalog = {}
+	message_patterns.clear()
 	if selected != "en":
 		var path := "res://addons/rpg_time/editor/locales/%s.json" % selected
 		if FileAccess.file_exists(path):
@@ -23,6 +26,15 @@ static func set_locale(code: String, _persist: bool = true) -> void:
 	if selected != "en" and FileAccess.file_exists(extra):
 		var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(extra))
 		if data is Dictionary: catalog.merge(data,true)
+	for key in catalog:
+		if "%s" not in key and "%d" not in key: continue
+		var regex := RegEx.new()
+		var escaped := ""
+		for character in str(key):
+			escaped += "\\" + character if character in "\\.^$|?*+()[]{}" else character
+		escaped = escaped.replace("%s", "(.+)").replace("%d", "([0-9]+)")
+		if regex.compile("^" + escaped + "$") == OK:
+			message_patterns.append({"regex": regex, "text": str(catalog[key])})
 
 static func t(source: String) -> String:
 	locale()
@@ -34,17 +46,10 @@ static func message(source: String) -> String:
 	for prefix in ["Please check this change: ", "Please check: ", "Profile rejected: "]:
 		if source.begins_with(prefix): return t(prefix) + message(source.substr(prefix.length()))
 	# Translate formatted validation messages while retaining their original arguments.
-	for key in catalog:
-		if "%s" not in key and "%d" not in key: continue
-		var regex := RegEx.new()
-		var escaped := ""
-		for character in str(key):
-			escaped += "\\" + character if character in "\\.^$|?*+()[]{}" else character
-		escaped = escaped.replace("%s", "(.+)").replace("%d", "([0-9]+)")
-		if regex.compile("^" + escaped + "$") != OK: continue
-		var found := regex.search(source)
+	for pattern in message_patterns:
+		var found: RegExMatch = pattern.regex.search(source)
 		if found == null: continue
-		var result: String = catalog[key]
+		var result: String = pattern.text
 		for i in range(1, found.get_group_count() + 1):
 			var at_s := result.find("%s")
 			var at_d := result.find("%d")
