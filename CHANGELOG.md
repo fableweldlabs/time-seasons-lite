@@ -1,3 +1,7 @@
+# 2.2.0
+
+Five new languages: Polish, Korean, Traditional Chinese, Turkish and Ukrainian. Adds localized quick starts and reduces repeated status-message processing. Optional example translations and signs updated separately. No clock-core or profile-schema changes from 2.1.0.
+
 # Changelog
 
 ## 1.4.0
