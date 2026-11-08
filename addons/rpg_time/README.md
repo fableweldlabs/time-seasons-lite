@@ -34,3 +34,9 @@ Translations are AI-assisted and have not had independent native-speaker review.
 ## Version 2.2.0
 
 Adds Polish, Korean, Traditional Chinese, Turkish and Ukrainian across the interface, quick starts and optional example. Formatted status-message patterns are now compiled once per language change rather than once per message. Core clock behavior and existing profile formats are unchanged.
+
+## Appearance and navigation update
+
+See [Appearance and navigation](APPEARANCE.md) for the four themes, text sizing and action search in all twelve supported languages. See [Update notes](UPDATE-NOTES.md) for this release.
+
+The addon works without the example game. Lumen Vale and other example downloads are optional.
