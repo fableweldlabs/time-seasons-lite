@@ -30,6 +30,7 @@ var period_rows: VBoxContainer
 var details: VBoxContainer
 
 func _ready() -> void:
+	call_deferred("_fw_install_appearance")
 	if Engine.is_editor_hint():
 		L.set_locale(str(EditorInterface.get_editor_settings().get_project_metadata("fableweld_time","language","en")),false)
 	custom_minimum_size = Vector2(290,320)
@@ -39,6 +40,7 @@ func _ready() -> void:
 	add_child(head)
 	var mark := TextureRect.new()
 	mark.texture = preload("res://addons/rpg_time/core/brand.gd").texture()
+	mark.set_meta("fw_brand_provider",preload("res://addons/rpg_time/core/brand.gd"))
 	mark.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	mark.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	mark.custom_minimum_size = Vector2(38,38)
@@ -299,6 +301,7 @@ func fill_period() -> void:
 	filling = false
 
 func refresh() -> void:
+	_fw_preview_stamp=[]
 	filling = true
 	has_unapplied = false
 	var p := model.profile
@@ -408,6 +411,10 @@ func step_preview(minutes: int) -> void:
 func update_preview() -> void:
 	if clock_label == null or preview == null: return
 	var date: Dictionary = preview.date_at()
+	var _fw_key:Array=[date.minute,date.day,date.year,preview.season_at(),preview.period_at(),preview_running,L.locale()]
+	if _fw_key==_fw_preview_stamp:return
+	_fw_preview_stamp=_fw_key
+	_fw_preview_updates+=1
 	clock_label.text = "%02d:%02d" % [date.minute/60,date.minute%60]
 	date_label.text = L.t("%s · Day %d · Year %d") % [L.t(preview.season_at()),date.day,date.year]
 	period_label.text = preview.period_at()
@@ -424,6 +431,7 @@ func _process(delta: float) -> void:
 		update_preview()
 
 func change_language(index: int) -> void:
+	call_deferred("_fw_refresh_appearance_locale")
 	if index < 0 or index >= L.CODES.size(): return
 	language_picker.select(index)
 	L.set_locale(L.CODES[index])
@@ -437,3 +445,19 @@ func change_language(index: int) -> void:
 	saved_label.text = (L.t("Unsaved world") if model.source_path.is_empty() else model.source_path.get_file().get_basename().capitalize()) + (L.t(" · changes to save") if model.dirty else L.t(" · saved"))
 	create_button.tooltip_text = L.t("Save your world settings first") if create_button.disabled else L.t("Choose where your new clock scene will live")
 	update_preview()
+
+func _fw_install_appearance() -> void:
+	var controller=preload("res://addons/rpg_time/appearance.gd").install(self,preload("res://addons/rpg_time/appearance.gd"))
+	var _fw_host:Control=self
+	if _fw_host is VBoxContainer:controller.add_toolbar(_fw_host)
+	elif _fw_host is PanelContainer:
+		for child in get_children():
+			if child is VBoxContainer:controller.add_toolbar(child);break
+	controller.apply()
+
+var _fw_preview_stamp:Array=[]
+var _fw_preview_updates:int=0
+
+func _fw_refresh_appearance_locale()->void:
+	var appearance=get_node_or_null("FableweldAppearance")
+	if appearance!=null:appearance._refresh_locale()
