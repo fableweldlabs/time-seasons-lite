@@ -1,0 +1,4 @@
+Fableweld appearance helper
+Copyright (c) 2026 Gordon Hinchen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of appearance.gd, to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies, provided this notice is included. THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND. This grant applies only to appearance.gd; other addon components retain their own licenses.
