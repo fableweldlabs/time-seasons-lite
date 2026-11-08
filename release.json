@@ -1,6 +1,6 @@
 {
   "product": "Time & Seasons Lite",
-  "version": "1.4.0",
+  "version": "2.3.0",
   "status": "release",
   "license": "MIT",
   "copyright": "Gordon Hinchen",
@@ -16,5 +16,19 @@
   "immutable_existing_release": "v1.3.3",
   "stable_urls": true,
   "showcase": "Lumen Vale",
-  "counterpart": "Time & Seasons Starter at USD 2.99"
+  "counterpart": "Time & Seasons Starter at USD 2.99",
+  "canonical_download": "https://fableweld-labs.itch.io/time-seasons-free-lite",
+  "addon_sha256": "ee919d971f40c965fb8fcbcf991fd46d30578ca7c2cef94c29e531d9ee943fa0",
+  "appearance": [
+    "light",
+    "dark",
+    "fableweld",
+    "gold"
+  ],
+  "text_sizes_percent": [
+    100,
+    125,
+    150
+  ],
+  "languages": 12
 }

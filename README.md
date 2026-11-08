@@ -12,7 +12,7 @@ This repository contains source, documentation and development checks. Install r
 
 [Illustrated clock-signal tutorial and optional 4 KB sample](https://fableweld-labs.itch.io/time-seasons-free-lite/devlog/1725172/tutorial-open-a-shop-with-godot-clock-signals): download Addon Only plus the optional Clock Signal Tutorial from itch.io, copy the addon’s addons folder beside the tutorial project.godot, import in Godot and press F5. The sample shop opens at morning and closes at evening. No large example-game download is needed.
 
-Version 2.2.0 adds five languages and more efficient formatted-message translation. The addon source here matches the new release; download the packaged addon and optional examples from itch.io. Verified tutorial target: Godot 4.7.2 Windows x64. The sample shop and display are separate example code, not built-in Lite features.
+Version 2.3.0 adds clean Light and Dark themes, optional Fableweld and Gold styles, scalable text, safe action search and cached preview presentation. The addon source here matches the new release; download the packaged addon and optional examples from itch.io. Verified tutorial target: Godot 4.7.2 Windows x64. The sample shop and display are separate example code, not built-in Lite features.
 
 ## Update policy
 Stable add-on folder, script class names, UIDs and profile schema keep customer resources working between compatible updates. User files stay outside addons. Version details live in plugin.cfg and CHANGELOG.md, not product titles or thumbnails. Lite can be used on its own under MIT. Optional paid editions are available from the creator storefront; no purchase is required for Lite.
@@ -33,6 +33,6 @@ Download the optional Editable Example Project, extract it separately and open i
 
 English, Spanish, Brazilian Portuguese, Simplified Chinese, Japanese, French, German, Polish, Korean, Traditional Chinese, Turkish and Ukrainian. Interface and quick starts are included here. The optional Lumen Vale downloads also translate dialogue, controls and signs. Translations are AI-assisted, not independently native-speaker certified.
 
-## Version 2.2.0
+## Version 2.3.0
 
-Formatted status-message patterns are compiled once per language selection instead of once per message. Clock behavior and customer profile format remain unchanged from 2.1.0. Keep profiles outside addons and back up before updating.
+Use Light in a bright workspace or Dark in a dim workspace. Fableweld and Gold are optional styles. Text sizes are100%,125% and150%. Find action focuses an available button without activating it, and scrolling follows keyboard focus. Preview presentation skips unchanged requests while simulation ticks continue. Theme/color resources are cached; appearance refreshes are event-driven. Preferences are separate from game saves. Existing custom HUD colors and style resources remain intact. See [the twelve-language appearance guide](addons/rpg_time/APPEARANCE.md) and [update notes](addons/rpg_time/UPDATE-NOTES.md). Keep profiles outside addons and back up before updating.
